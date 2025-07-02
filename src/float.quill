@@ -18,6 +18,11 @@ pub val SQRT_2: Float = 1.41421356237309504880168872420969808
 
 mod std
 
+pub fun Float::as_hash(self: Float) -> Int {
+    if !(self |> is_finite()) { return 0 }
+    return self |> as_int()
+}
+
 pub fun Float::clone(self: Float) -> Float = self
 
 pub fun Float::as_radians(self: Float) -> Float
