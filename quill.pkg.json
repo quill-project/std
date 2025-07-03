@@ -3,6 +3,6 @@
     "authors": ["schwalbe_t"],
     "description": "The Quill standard library.",
     "type": "library",
-    "backend": "c",
+    "backend": "any",
     "dependencies": []
 }

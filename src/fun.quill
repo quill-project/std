@@ -1,2 +1,21 @@
 
 mod std
+
+pub fun Fun0::not[](f: Fun() -> Bool) -> Fun() -> Bool
+    = || !f()
+
+
+pub fun Fun1::not[A](f: Fun(A) -> Bool) -> Fun(A) -> Bool
+    = |a| !f(a)
+
+
+pub fun Fun2::not[A, B](f: Fun(A, B) -> Bool) -> Fun(A, B) -> Bool
+    = |a, b| !f(a, b)
+
+
+pub fun Fun3::not[A, B, C](f: Fun(A, B, C) -> Bool) -> Fun(A, B, C) -> Bool
+    = |a, b, c| !f(a, b, c)
+
+
+pub fun Fun4::not[A, B, C, D](f: Fun(A, B, C, D) -> Bool) -> Fun(A, B, C, D) -> Bool
+    = |a, b, c, d| !f(a, b, c, d)
