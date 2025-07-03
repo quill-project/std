@@ -1,7 +1,7 @@
 {
     "name": "std",
     "authors": ["schwalbe_t"],
-    "desciption": "The Quill standard library.",
+    "description": "The Quill standard library.",
     "type": "library",
     "backend": "c",
     "dependencies": []
