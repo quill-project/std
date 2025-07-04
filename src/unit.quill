@@ -1,6 +1,18 @@
 
 mod std
 
+pub fun Unit::eq(lhs: Unit, rhs: Unit) -> Bool {
+    lhs // unused
+    rhs // unused
+    return true
+}
+
+pub fun Unit::not_eq(lhs: Unit, rhs: Unit) -> Bool {
+    lhs // unused
+    rhs // unused
+    return false
+}
+
 pub fun Unit::as_string(self: Unit) -> String {
     self // unused
     return "unit"
