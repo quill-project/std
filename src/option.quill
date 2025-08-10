@@ -128,3 +128,14 @@ pub fun Option::as_seq[T](self: Option[T]) -> mut Sequence[T] {
         None { return Sequence::empty() }
     }
 }
+
+pub fun Option::all[T](vals: mut Sequence[Option[T]]) -> Option[mut List[T]] {
+    val out: mut List[T] = List::empty()
+    for opt_val: vals {
+        match opt_val {
+            Some(v) { out |> push(v) }
+            None { return Option::None }
+        }
+    }
+    return Option::Some(out)
+}
